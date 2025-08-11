@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+html, body, #__next {
+  height: 100%;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f9fafb;
+}
+
+input, button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #1f2937;
+  color: #f9fafb;
+  font-family: 'Cairo', sans-serif; /* تغيير الخط للأزرار */
+  transition: all 0.3s ease;
+}
+
+/* Red Button */
+button.red {
+  background-color: #dc2626;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button.red:hover {
+  background-color: #b91c1c;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Blue Button */
+button.blue {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button.blue:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+table th, table td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #374151;
+}
+
+table th {
+  background-color: #1f2937;
+  color: #f9fafb;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  input, button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  table th, table td {
+    padding: 8px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  input, button {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  table th, table td {
+    padding: 6px 4px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
